@@ -7,7 +7,7 @@ import urllib.parse
 url = 'https://maps.googleapis.com/maps/api/place/textsearch/json?'
 apikey = 'YOUR API KEY'
 
-def gcode(location):
+def placeidME(location):
 	location = urllib.parse.quote(str(location) + ' Greater Vancouver')
 	
 	req = 'query={}&key={}'.format(location,apikey)
@@ -20,5 +20,5 @@ def gcode(location):
 
 	return place_id
 
-print(gcode("I&I Jamaican Restaurant"))
+print(placeidME("I&I Jamaican Restaurant"))
 
