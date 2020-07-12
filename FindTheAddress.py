@@ -3,7 +3,7 @@ import requests
 url = 'https://maps.googleapis.com/maps/api/geocode/json?'
 apikey = 'YOUR API KEY'
 
-def gcode(location):
+def addressME(location):
 	location = str(location).replace(' ','+') + ',+Greater+Vancouver'
 	query = 'address={}&key={}'.format(location,apikey)
 	request = url + query
