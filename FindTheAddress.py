@@ -1,7 +1,7 @@
 import requests
 
 url = 'https://maps.googleapis.com/maps/api/geocode/json?'
-apikey = 'YOUR API KEY'
+apikey = ###YOUR-API-KEY###
 
 def addressME(location):
 	location = str(location).replace(' ','+') + ',+Greater+Vancouver'
@@ -22,5 +22,5 @@ def addressME(location):
 			return None
 	
 
-#print(gcode("I&I Jamaican Restaurant"))
+#print(addressME("I&I Jamaican Restaurant"))
 
